@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Andro.SubMenu"
+             xmlns:pages="clr-namespace:Andro">
+    <FlyoutItem>
+        <Tab Title="Меню">
+            <ShellContent Title="Пользователи">
+                <ContentPage Title="Пользователи">
+                    
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+
+    </FlyoutItem>
+</Shell>

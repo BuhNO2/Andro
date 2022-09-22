@@ -1,0 +1,16 @@
+C:\Users\Никита\source\repos\Andro\Andro\bin\Debug\netstandard2.0\Andro.deps.json
+C:\Users\Никита\source\repos\Andro\Andro\bin\Debug\netstandard2.0\Andro.dll
+C:\Users\Никита\source\repos\Andro\Andro\bin\Debug\netstandard2.0\Andro.pdb
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Andro.csproj.AssemblyReference.cache
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Andro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Andro.AssemblyInfoInputs.cache
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Andro.AssemblyInfo.cs
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Andro.csproj.CoreCompileInputs.cache
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Andro.dll
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\refint\Andro.dll
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Andro.pdb
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\ref\Andro.dll
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Menu.xaml.g.cs
