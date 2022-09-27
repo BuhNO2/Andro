@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Andro.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#d8d9da"
+    NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame
+            Padding="24"
+            BackgroundColor="Black"
+            CornerRadius="0">
+            <Label
+                FontAttributes="Bold"
+                FontSize="36"
+                HorizontalTextAlignment="Center"
+                Text="Авторизация"
+                TextColor="White" />
+        </Frame>
+        <FlexLayout Direction="Column" JustifyContent="Center">
+            <Entry
+                x:Name="LoginUser"
+                Margin="5,10,0,10"
+                BackgroundColor="White"
+                ClearButtonVisibility="WhileEditing"
+                Placeholder="Логин"
+                TextColor="Black" />
+            <Entry
+                x:Name="PassUser"
+                Margin="5,10,0,10"
+                BackgroundColor="White"
+                ClearButtonVisibility="WhileEditing"
+                IsPassword="True"
+                Placeholder="Пароль"
+                PlaceholderColor="Black"
+                TextColor="Black" />
+
+        </FlexLayout>
+        <Button
+            x:Name="Auth"
+            BackgroundColor="Black"
+            Clicked="AuthClicked"
+            CornerRadius="13"
+            HorizontalOptions="Center"
+            Text="Вход"
+            TextColor="White"
+            VerticalOptions="Center" />
+    </StackLayout>
+</ContentPage>

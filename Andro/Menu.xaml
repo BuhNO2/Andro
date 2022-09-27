@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Andro.Menu"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#d8d9da"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                <Frame
+                    Padding="20"
+                    BackgroundColor="Black"
+                    CornerRadius="0">
+                    <Label
+                        FontSize="30"
+                        HorizontalTextAlignment="Center"
+                        Text="Данные пользователя"
+                        TextColor="White" />
+                </Frame>
+
+                <Label
+                    Margin="15,30,10,5"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    Text="Фамилия" />
+                <Entry
+                    x:Name="TextSurname"
+                    Margin="5,10,5,5"
+                    BackgroundColor="White"
+                    FontAttributes="Italic"
+                    Placeholder="Ввести"
+                    TextColor="Black" />
+
+                <Label
+                    Margin="15,15,10,5"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    Text="Имя" />
+                <Entry
+                    x:Name="TextName"
+                    Margin="5,10,5,5"
+                    BackgroundColor="White"
+                    FontAttributes="Italic"
+                    Placeholder="Ввести"
+                    TextColor="Black" />
+                <Label
+                    Margin="15,15,10,5"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    Text="Отчество" />
+                <Entry
+                    x:Name="TextPatronomic"
+                    Margin="5,10,5,5"
+                    BackgroundColor="White"
+                    FontAttributes="Italic"
+                    Placeholder="Ввести"
+                    TextColor="Black" />
+                <Label
+                    Margin="15,15,10,5"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    Text="Дата рождения" />
+                <Entry
+                    x:Name="TextDateofBirth"
+                    Margin="5,10,5,5"
+                    BackgroundColor="White"
+                    FontAttributes="Italic"
+                    Placeholder="Ввести"
+                    TextColor="Black" />
+                <Label
+                    Margin="15,15,10,5"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    Text="Место обучения" />
+                <Entry
+                    x:Name="TextEnterprice"
+                    Margin="5,10,5,5"
+                    BackgroundColor="White"
+                    FontAttributes="Italic"
+                    Placeholder="Ввести"
+                    TextColor="Black" />
+
+            </FlexLayout>
+
+            <FlexLayout
+                Margin="10,5,10,5"
+                Direction="Row"
+                JustifyContent="SpaceBetween">
+                <Button
+                    x:Name="Update"
+                    Margin="10"
+                    BackgroundColor="Black"
+                    Clicked="UpdateBut"
+                    CornerRadius="13"
+                    Text="Обновить"
+                    TextColor="White" />
+                <Button
+                    x:Name="Save"
+                    Margin="10"
+                    BackgroundColor="Black"
+                    Clicked="SaveChangesUser_Clicked"
+                    CornerRadius="13"
+                    Text="Сохранить"
+                    TextColor="White" />
+
+            </FlexLayout>
+
+        </StackLayout>
+
+
+
+    </ContentPage.Content>
+</ContentPage>
+
