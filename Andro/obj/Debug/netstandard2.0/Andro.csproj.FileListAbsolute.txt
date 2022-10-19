@@ -14,3 +14,4 @@ C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\refint\A
 C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Andro.pdb
 C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\ref\Andro.dll
 C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\Menu.xaml.g.cs
+C:\Users\Никита\source\repos\Andro\Andro\obj\Debug\netstandard2.0\UsersGrid.xaml.g.cs

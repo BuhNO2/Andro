@@ -1680,11 +1680,11 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.2196": {
+      "Xamarin.Forms/5.0.0.2515": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Browser": "[1.3.0.6, 1.4.0)",
-          "Xamarin.AndroidX.Core": "[1.6.0.1, 1.7.0)",
+          "Xamarin.AndroidX.Core": "[1.6.0.1, 1.7.0.2]",
           "Xamarin.AndroidX.CustomView": "[1.1.0.7, 1.2.0)",
           "Xamarin.AndroidX.Legacy.Support.V4": "[1.0.0.8, 1.1.0)",
           "Xamarin.AndroidX.Lifecycle.LiveData": "[2.3.1.1, 2.4.0)",
@@ -1730,6 +1730,18 @@
         "build": {
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.DataGrid/5.0.0.2515": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2515"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
         }
       },
       "Xamarin.Google.Android.Material/1.4.0.2": {
@@ -1795,7 +1807,8 @@
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2515",
+          "Xamarin.Forms.DataGrid": "5.0.0.2515"
         },
         "compile": {
           "bin/placeholder/Andro.dll": {}
@@ -3178,10 +3191,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2196": {
-      "sha512": "zSXDiZukojtEBmZKUUG1yYBwlB9tI8JLPkc6n+Sm1PAX01QyzErWE9AaFJgP7usyoGHn92l4HnQF7A+/MPI6VA==",
+    "Xamarin.Forms/5.0.0.2515": {
+      "sha512": "n/Y/xk1idWRkxk7xItwvNwwda7CHpIk7JxD6tXkGXmTqiVGV1xRkepf5aKXFkQLM9KIQhXXYBxPsdyJysPpktw==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2196",
+      "path": "xamarin.forms/5.0.0.2515",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3390,8 +3403,20 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2196.nupkg.sha512",
+        "xamarin.forms.5.0.0.2515.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.DataGrid/5.0.0.2515": {
+      "sha512": "r712mHEgeVlBT3BOfaGPJhJPCtL2bwdYbMnFg+fVvIE+eZ/EATFdeq0fpRh5X+ACJiL8G9AUcRo9JGE5T9I92g==",
+      "type": "package",
+      "path": "xamarin.forms.datagrid/5.0.0.2515",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll",
+        "xamarin.forms.datagrid.5.0.0.2515.nupkg.sha512",
+        "xamarin.forms.datagrid.nuspec"
       ]
     },
     "Xamarin.Google.Android.Material/1.4.0.2": {
@@ -3445,7 +3470,7 @@
     "MonoAndroid,Version=v12.0": [
       "Andro >= 1.0.0",
       "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Forms >= 5.0.0.2196"
+      "Xamarin.Forms >= 5.0.0.2515"
     ]
   },
   "packageFolders": {
@@ -3496,7 +3521,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2196, )"
+            "version": "[5.0.0.2515, )"
           }
         }
       }

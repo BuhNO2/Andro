@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Andro
+﻿namespace Andro
 {
     public class User
     {
@@ -19,6 +15,7 @@ namespace Andro
 
         public string Patronomic { get; set; }
 
-        public DateTime DateofBirth { get; set; }
+        public string DateofBirth { get; set; }
+        public int RoleId { get; set; }
     }
 }

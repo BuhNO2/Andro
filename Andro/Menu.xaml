@@ -1,19 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Andro.Menu" BackgroundColor ="#d8d9da">
+             x:Class="Andro.Menu" BackgroundColor ="White">
 
     <ContentPage.Content>
         
-        <StackLayout>
-            
-            <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
-                <Frame BackgroundColor="Wheat" Padding="20" CornerRadius="0">
-                    <Label Text="Данные пользователя" HorizontalTextAlignment="Center"  FontSize="30"/>
+        <StackLayout >
+            <FlexLayout Direction="Column" JustifyContent="SpaceAround" >
+                <Frame BackgroundColor="Black" Padding="20" CornerRadius="0">
+                    <Label Text="Данные пользователя" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
                 </Frame>
+                
+                <Label Text="Меню" />
+                <Picker  x:Name="SubMenu" SelectedIndexChanged="PickerSelected" BackgroundColor="White" TextColor="White" WidthRequest="50" Margin="20,0,0,0">
+                    <Picker.Items>
+                        <x:String>Пользователи</x:String>
+                        <x:String>Задания</x:String>
+                        <x:String>Пусто</x:String>
+                    </Picker.Items>
+                </Picker>
 
                 <Label
-                Margin="15,30,10,5"
+                Margin="15,15,10,5"
                 FontSize="15"
                 Text="Фамилия" 
                 FontAttributes="Bold"/>
@@ -26,7 +34,7 @@
                 TextColor="Black" />
 
                 <Label
-                Margin="15,15,10,5"
+                Margin="15,10,10,5"
                 FontSize="15"
                 Text="Имя" 
                 FontAttributes="Bold"/>
@@ -37,7 +45,7 @@
                 Placeholder="Ввести"
                 TextColor="Black" Margin="5,10,5,5"/>
                 <Label
-                Margin="15,15,10,5"
+                Margin="15,10,10,5"
                 FontSize="15"
                 Text="Отчество" FontAttributes="Bold"/>
                 <Entry
@@ -57,7 +65,7 @@
                 Placeholder="Ввести"
                 TextColor="Black" Margin="5,10,5,5"/>
                 <Label
-                Margin="15,15,10,5"
+                Margin="15,10,10,5"
                 FontSize="15"
                 Text="Место обучения" FontAttributes="Bold"/>
                 <Entry
@@ -66,31 +74,29 @@
                 FontAttributes="Italic"
                 Placeholder="Ввести"
                 TextColor="Black" Margin="5,10,5,5"/>
-                
             </FlexLayout>
-            
+
             <FlexLayout Direction="Row" Margin="10,5,10,5" JustifyContent="SpaceBetween">
-                  <Button
-                x:Name="Update"
+                <Button
+                x:Name="UpdateBut"
                  Margin="10"  
-
-                BackgroundColor="Moccasin"
-                Clicked="UpdateBut"
+                BackgroundColor="White"
+                Clicked="Update_Clicked"
                 Text="Обновить"
+                      BorderColor="Black"
+                      BorderWidth="1"
                 TextColor="Black"/>
-        <Button
-                x:Name="Save"
+                <Button
+                x:Name="SaveBut"
                 Margin="10"     
-
-                BackgroundColor="Moccasin"
-                Clicked="SaveData"
+                BorderColor="Black"
+                BorderWidth="1"
+                BackgroundColor="White"
+                Clicked="SaveClicked"
                 Text="Сохранить"
                 TextColor="Black"/>
             </FlexLayout>
-      
         </StackLayout>
-       
-
-
+      
     </ContentPage.Content>
 </ContentPage>

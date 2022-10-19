@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "66FznHBIvlNEILjEo4n8CtNvEFFFzV09QBsbV1tk6efhpddykhZUuBAEcsxbqb4tk+UMyi0TRrJuj5FVUVXrvQ==",
+  "dgSpecHash": "R7hXspXkTapBGKqhRvpmIki5EKeIEepmtlIq6zFOZzrW3wECLxLlIDpUNPEXdQE/xx5OKMhVfBDJ1AD6F+2toQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Никита\\source\\repos\\Andro\\Andro.Android\\Andro.Android.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,8 @@
     "C:\\Users\\Никита\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.8\\xamarin.androidx.viewpager.1.0.0.8.nupkg.sha512",
     "C:\\Users\\Никита\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
     "C:\\Users\\Никита\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Никита\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\Никита\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
+    "C:\\Users\\Никита\\.nuget\\packages\\xamarin.forms.datagrid\\5.0.0.2515\\xamarin.forms.datagrid.5.0.0.2515.nupkg.sha512",
     "C:\\Users\\Никита\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\Никита\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],

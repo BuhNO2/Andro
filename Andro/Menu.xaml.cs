@@ -1,9 +1,12 @@
 ﻿
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http.Headers;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,61 +18,75 @@ namespace Andro
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Menu : ContentPage
     {
-        User user;
-        public Menu(User user)
+
+        public Menu()
         {
-            InitializeComponent();
-            this.user = user;
-            Updating(user);
+            InitializeComponent();          
+            Updating();
         }
 
-        private void SaveData(object sender, EventArgs e)
+        private void Updating()
+        {
+            TextName.Text = CurrentUser.user.Name;
+            TextSurname.Text = CurrentUser.user.Surname;
+            TextPatronomic.Text = CurrentUser.user.Patronomic;
+            TextDateofBirth.Text = CurrentUser.user.DateofBirth;
+            TextEnterprice.Text = CurrentUser.user.Enterprice;
+        }
+
+        private async void SaveUser()
+        {
+            string url = "https://apis.api-mauijobs.site/Users";
+          
+            SaveBut.IsEnabled = false;
+
+
+            CurrentUser.user.Surname = TextSurname.Text;
+            CurrentUser.user.Name = TextName.Text;
+            CurrentUser.user.Patronomic = TextPatronomic.Text;
+            CurrentUser.user.DateofBirth = TextDateofBirth.Text;
+            CurrentUser.user.Enterprice = TextEnterprice.Text;
+
+            string json = JsonConvert.SerializeObject(CurrentUser.user);
+            HttpContent content = new StringContent(json);
+
+            HttpClient client = new HttpClient();
+            content.Headers.ContentType = MediaTypeHeaderValue.Parse(@"application/json");
+
+            HttpResponseMessage response = await client.PutAsync(url, content);
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                HttpContent responseContent = response.Content;
+                var a = await responseContent.ReadAsStringAsync();
+                CurrentUser.user = JsonConvert.DeserializeObject<User>(a);
+                Updating();
+                SaveBut.IsEnabled = true;
+            }
+        }
+
+        private void Update_Clicked(object sender, EventArgs e)
+        {
+            Updating();
+        }
+
+        private void SaveClicked(object sender, EventArgs e)
         {
             SaveUser();
         }
 
-        private void UpdateBut(object sender, EventArgs e)
+        private async void PickerSelected(object sender, EventArgs e)
         {
-            Updating(user);
-        }
 
-        private void Updating(User user)
-        {
-            TextName.Text = user.Name;
-            TextSurname.Text = user.Surname;
-            TextPatronomic.Text = user.Patronomic;
-            TextDateofBirth.Text = user.DateofBirth.ToString();
-            TextEnterprice.Text = user.Enterprice;
-        }
-
-        private void SaveUser()
-        {
-           /* bool isOkay;
-            string jsonString = JsonSerializer.Serialize<User>(new User()
+            if (SubMenu.SelectedIndex == 0)
             {
-                ID = user.ID,
-                Name = TextName.Text,
-                Surname = TextSurname.Text,
-                Patronomic = TextPatronomic.Text,
-                DateofBirth = DateTime.Parse(TextDateofBirth.Text),
-                Enterprice = TextEnterprice.Text,
-            });
-
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://apis.api-mauijobs.site/Users?" + jsonString);
-            request.Method = "POST";
-            request.ContentType = "text/json";
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            using (Stream stream = response.GetResponseStream())
-            {
-                using (StreamReader reader = new StreamReader(stream))
-                {
-                    isOkay = Convert.ToBoolean(reader.ReadToEnd());
-                }
+                await this.Navigation.PushModalAsync(new UsersGrid());
             }
-            response.Close();*/
+            else if (SubMenu.SelectedIndex == 1)
+            {
 
-
-        }
-
+            }
+            
+         }
     }
 }
